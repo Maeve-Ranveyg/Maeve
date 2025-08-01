@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maeve</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .maeve-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+    }
+    .maeve-image {
+      display: block;
+      margin: 0 auto 18px auto;
+      max-width: 340px;
+      max-height: 460px;
+      border-radius: 22px;
+      box-shadow: 0 2px 32px rgba(0,0,0,0.7);
+      border: 2px solid #76f3e9;
+      background: #222;
+      object-fit: cover;
+    }
+    .maeve-name {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #76f3e9;
+      margin-bottom: 28px;
+      margin-top: -4px;
+      background: #181818;
+      padding: 8px 32px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .widget-container {
+      background: #181818;
+      border-radius: 16px;
+      box-shadow: 0 2px 32px rgba(0,0,0,0.8);
+      width: 400px;
+      max-width: 95vw;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid #222;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="maeve-container">
+    <img src="image1.jpg" alt="Maeve" class="maeve-image" />
+    <div class="maeve-name">Maeve</div>
+    <div class="widget-container">
+      <!-- ElevenLabs Convai Widget Embed -->
+      <elevenlabs-convai agent-id="agent_5701k1he45cee2k9v6apwfhtak1d"></elevenlabs-convai>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+</html>
